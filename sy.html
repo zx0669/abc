@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/pc.css" media="screen and (min-width:1040px)">
+	<link rel="stylesheet" href="css/pad.css" media="screen and (min-width:785px) and (max-width:1040px)">
+	<link rel="stylesheet" href="css/phone.css" media="screen and (max-width:784px)">
+</head>
+<body>
+	<div class="warp">
+		<div class="tit">
+			<img src="images/28.png" alt="">
+			<ul class="tit_right">
+				<li>首页</li>
+				<li>电影</li>
+				<li>电视</li>
+				<li>动画片</li>
+				<li>纪录片</li>
+				<li>游戏</li>
+			</ul>
+		</div>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="images/1.png" alt=""></div>
+		        <div class="swiper-slide"><img src="images/16.png" alt=""></div>
+		        <div class="swiper-slide"><img src="images/17.png" alt=""></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		</div>
+		<div class="con1">
+			<div class="con1_tit">猜你喜欢</div>
+			<div class="con1_content">
+				<div class="w660">
+					<img src="images/2.png" alt="">
+					<img src="images/3.png" alt="">
+					<img src="images/4.png" alt="">
+					<img class="hideph" src="images/5.png" alt="">
+					<img class="hide hideph" src="images/6.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="con2">
+			<div class="con1_tit">动漫</div>
+			<div class="con2_content hideph">
+				<div class="con2_content_left">
+					<img src="images/7.png" alt="">
+				</div>
+				<div class="con2_content_right">
+					<img src="images/8.png" alt="">
+					<img src="images/9.png" alt="">
+					<img src="images/10.png" alt="">
+					<img src="images/11.png" alt="">
+					<img class="hide" src="images/12.png" alt="">
+					<img class="hide" src="images/13.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="con3">
+			<div class="con1_tit">综艺</div>
+			<div class="con2_content hideph">
+				<div class="con2_content_left">
+					<img src="images/14.png" alt="">
+				</div>
+				<div class="con2_content_right">
+					<img src="images/15.png" alt="">
+					<img src="images/16.png" alt="">
+					<img src="images/17.png" alt="">
+					<img src="images/18.png" alt="">
+					<img class="hide" src="images/19.png" alt="">
+					<img class="hide" src="images/20.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="con4">
+			<div class="con1_tit">国产剧</div>
+			<div class="con2_content hideph">
+				<div class="con2_content_left">
+					<img src="images/21.png" alt="">
+				</div>
+				<div class="con2_content_right">
+					<img src="images/22.png" alt="">
+					<img src="images/23.png" alt="">
+					<img src="images/24.png" alt="">
+					<img src="images/25.png" alt="">
+					<img class="hide" src="images/26.png" alt="">
+					<img class="hide" src="images/27.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<img src="images/28.png" alt="">
+			<ul>
+				<li>关于本站</li>
+				<li>常见问题</li>
+				<li>全站地图</li>
+				<li>意见反馈</li>
+				<li>京ICP证3018</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/sy.js"></script>
+<script type="text/javascript">
+// 	var mySwiper = new Swiper ('.swiper-container', {
+// 	    // direction: 'vertical', //竖向
+// 	    direction: 'horizontal', //横向
+// 	    loop: true, //循环
+// 	    autoplay : 3000, //自动播放
+// 	    autoplayDisableOnInteraction : false, //控制后继续自动播放
+// 	    paginationClickable :true, //分页器可以点击切换
+// 	    grabCursor : true,//鼠标手掌
+// 	    // 分页器
+// 	    pagination: '.swiper-pagination',
+// 	    // 前进后退按钮
+//     	nextButton: '.swiper-button-next',
+//     	prevButton: '.swiper-button-prev',
+// 	 })   
+function resetPage(){
+	var deviceWidth=document.documentElement.clientWidth;// 设备实际显示宽度
+	var scale=deviceWidth/640;
+	document.body.style.zoom=scale;
+}
+window.onresize=function (){ 
+	if (document.documentElement.clientWidth<=767) {
+		resetPage();
+		// window.onresize=function (){
+		// 	resetPage();
+		// }
+	}else{
+		document.body.style.zoom=1;
+	};
+}
+</script>
+</html>
